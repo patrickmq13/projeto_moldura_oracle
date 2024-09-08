@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #384c4e;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #ffffff;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background-page1 {
+    box-sizing: border-box;
+    background-image: url('assets/background-gif.gif'); /* Define a imagem de fundo como o arquivo GIF */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a área disponível */
+    background-position: auto; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que o GIF se repita */
+    color: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
+}
+
+.background-page2 {
+box-sizing: border-box;
+    background-color: #8a9c9a;
+    color: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
+}    
+
+.cabecalho {
+    padding: 2% 5% 5% 36%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 100px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 2%; /* Ajustado para fornecer mais espaço para o conteúdo e a imagem */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que o conteúdo se ajuste em dispositivos menores */
+    gap: 40px; /* Reduzido para evitar excesso de espaçamento */
+}
+
+.apresentacao__conteudo {
+    flex: 1 1 50%; /* Permite que o conteúdo se ajuste automaticamente */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Reduzido para melhor ajuste */
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2rem; /* Ajustado para melhor leitura */
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__titulo_about {
+    padding: 3%;
+    text-align: center;
+    font-size: 2rem; /* Ajustado para melhor leitura */
+    font-family: var(--fonte-primaria);
+    max-width: 800px; /* Ajuste conforme necessário */
+    width: 70%; /* Certifique-se de que o texto usa toda a largura disponível até o max-width */
+    margin: 1px; /* Centraliza o bloco de texto se o max-width estiver definido */
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    text-align: left;
+    font-size: 1.5rem; /* Ajustado para melhor ajuste ao redor da imagem */
+    font-family: var(--fonte-secundaria);
+    max-width: 600px; /* Ajuste conforme necessário */
+    width: 40%; /* Certifique-se de que o texto usa toda a largura disponível até o max-width */
+    margin: 0 left; /* Centraliza o bloco de texto se o max-width estiver definido */
+}
+
+.apresentacao__conteudo__texto_about {
+    padding: 10px 70px;
+    text-align: left;
+    font-size: 1.5rem; /* Ajustado para melhor ajuste ao redor da imagem */
+    font-family: var(--fonte-secundaria);
+    max-width: 800px; /* Ajuste conforme necessário */
+    width: 70%; /* Certifique-se de que o texto usa toda a largura disponível até o max-width */
+    margin: left; /* Centraliza o bloco de texto se o max-width estiver definido */
+}
+
+.softskills, .comunicacao, .resolucao_de_problemas_complexos, .gestao_de_tempo, .inteligencia_emocional {
+    padding: 10px 70px;
+    text-align: left;
+    font-size: 1.5rem; /* Ajustado para manter a consistência */
+    font-family: var(--fonte-secundaria);
+    max-width: 800px; /* Ajuste conforme necessário */
+    width: 68%; /* Certifique-se de que o texto usa toda a largura disponível até o max-width */
+    margin: left; /* Centraliza o bloco de texto se o max-width estiver definido */
+}
+
+.apresentacao__links {
+    flex: 1 1 50%; /* Permite que os links se ajustem automaticamente */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: row;
+    gap: 20px; /* Reduzido para melhor ajuste */
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.3rem; /* Ajustado para melhor visualização */
+}
+
+.apresentacao__links__navegacao, .link_oracle {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 100%; /* Ajustado para ocupar toda a largura disponível */
+    max-width: 400px; /* Limita a largura para melhor visualização */
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.3rem; /* Ajustado para melhor ajuste */
+    font-weight: 600;
+    padding: 15px 0; /* Ajustado para melhor espaçamento */
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao:hover, .link_oracle:hover {
+    background-color: var(--cor-hover);
+}
+
+.logo_wpp {
+    width: 25%;
+}
+
+.github {
+    width: 8%;
+}
+
+.linkedin_logo_class {
+    width: 8%;
+}
+
+.logo_oracle {
+    width: 10%;
+}
+
+.apresentacao__imagem {
+    width: 45%;
+    position: auto;
+    bottom: 20px; /* Distância do fundo da página */
+    right: 20px;  /* Distância da borda direita da página */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Limita a largura da imagem ao tamanho da tela */
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.apresentacao__imagem_sobremim {
+    width: 35%;
+    position: right;
+    bottom: 0; /* Distância do fundo da página */
+    right: 0;  /* Distância da borda direita da página */
+    max-width: 100%; /* Limita a largura da imagem ao tamanho da tela */
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    display: flex; /* Configura o rodapé para usar flexbox */
+    justify-content: space-between; /* Espaça o conteúdo entre os extremos do rodapé */
+    align-items: center; /* Alinha verticalmente o conteúdo no centro */
+    padding: 1em; /* Ajuste conforme necessário */
+    background-color: var(--cor-de-fundo); /* Substitua pela cor de fundo desejada */
+    color: var(--cor-do-texto); /* Substitua pela cor do texto desejada */
+    font-family: var(--fonte-secundaria); /* Fonte do rodapé */
+    font-size: 1.0rem; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+}
+
+/* Estilo do texto no rodapé */
+.rodape-texto {
+    flex: 1; /* Faz o texto ocupar todo o espaço disponível entre a imagem e o início do rodapé */
+    text-align: center; /* Centraliza o texto horizontalmente dentro do espaço */
+}
+
+/* Estilo da imagem no rodapé */
+.logo_one {
+    width: 8%; /* Ajusta a largura da imagem conforme necessário */
+    max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
